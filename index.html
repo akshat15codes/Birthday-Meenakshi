@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Meenakshi</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #ffb6c1, #ffe4e1);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .message {
+      font-size: 1.2rem;
+      color: #fff;
+      max-width: 700px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      text-shadow: 1px 1px 3px #d147a3;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .birthday-text {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 5px #ff69b4;
+      animation: blink 1.2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .balloon {
+      width: 40px;
+      height: 55px;
+      background: radial-gradient(circle, #ff4da6, #ff1a75);
+      border-radius: 50%;
+      position: absolute;
+      animation: floatUp 8s infinite ease-in;
+    }
+
+    .balloon::after {
+      content: '';
+      width: 2px;
+      height: 40px;
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+    }
+
+    @keyframes floatUp {
+      0% {
+        bottom: -100px;
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        bottom: 110%;
+        transform: translateX(100px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .balloon:nth-child(3) { left: 10%; animation-delay: 0s; background: #ff6666; }
+    .balloon:nth-child(4) { left: 30%; animation-delay: 2s; background: #66b3ff; }
+    .balloon:nth-child(5) { left: 50%; animation-delay: 1s; background: #ffcc66; }
+    .balloon:nth-child(6) { left: 70%; animation-delay: 3s; background: #99ff99; }
+    .balloon:nth-child(7) { left: 90%; animation-delay: 0.5s; background: #ff99cc; }
+  </style>
+</head>
+<body>
+  <!-- 💌 Your custom heartfelt message -->
+  <div class="message">
+    Some friends come and go but best friends like you leave lasting footprints on the heart 👣💖<br>
+    Meenakshi, may your birthday be as beautiful, unforgettable and full of love as you are 💐✨<br>
+    You deserve every bit of happiness in the world 🌈🤗<br>
+    <strong>Happy Birthday, my forever bestie! 🎂🎈💝</strong>
+  </div>
+
+  <!-- Main birthday heading -->
+  <div class="birthday-text">🎂 Happy Birthday Meenakshi 🎉</div>
+
+  <!-- Balloons -->
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+</body>
+</html>
